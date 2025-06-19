@@ -1,0 +1,509 @@
+/********************* Diseño responsivo *********************/
+@media (max-width: 500px) {
+    nav ul {
+      display: -webkit-inline-flex ;
+      flex-direction: inherit;
+      align-items: auto;
+      height: 20%;
+      width: 20%;
+    }
+}
+
+/********************* Color de fondo de la página *********************/
+body {
+    background-color: #d6d6d6;
+}
+
+
+/******************** Estilo barra de navegación ********************/
+nav{
+    background: rgb(34, 93, 43);
+    padding: auto;
+    max-width: auto;
+    text-align: right;
+    font-weight: bold;
+    z-index: 10;
+}
+
+nav ul {
+    display: inline-block;
+    background:rgb(34, 93, 43);
+    color: #fff;
+    padding: 1px 30px;
+    text-decoration: none;
+    z-index: 10;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+  }
+
+nav ul li a {
+    display: block;
+    padding: 5px 45px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-enlace:hover{
+    background: rgb(58, 120, 39);
+}
+
+/******** Estilo del submenú ********/
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    max-width: auto;
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  nav ul li ul li a {
+    padding: 12px 45px;
+    color: white;
+    text-align: right;
+  }
+
+  nav ul li ul li a:hover {
+    background-color: #0c602a;
+  }
+
+/****** Mostrar submenú al pasar mouse por encima *******/
+  nav ul li:hover > ul {
+    display: block;
+  }
+
+
+ /********************* Estilos de las secciones ***********************/
+ section {
+    display:flex;
+    padding: 20px;
+    margin: 20px;
+    background: #dce8dc;
+    border-radius: 8px;
+    box-shadow: 0px 6px 8px rgb(15, 88, 5);
+}
+
+
+/*********************** Footer ***************************/
+    footer {
+            background-color: #454040;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+    }
+
+
+/********************* Diseño de textos **********************/
+.textdescripcion1 {
+    font-family: "Algerian", sans-serif;
+    padding:10px; 
+    margin: 2px; 
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(25, 25, 21);
+}
+
+.textdescripcion2 {
+    font-family: "Berlin Sans FB", sans-serif;
+    background-color: rgb(140, 194, 149); 
+    padding:25px; 
+    margin: 2px; 
+    text-align: justify;
+    font-size: 22px;
+}
+
+.textdescripcion3 {
+    font-family: "Berlin Sans FB", sans-serif;
+    padding:25px; 
+    margin: 2px; 
+    text-align:justify;
+    font-size: 25px;
+}
+
+.textdescripcion4 {
+    font-family: "Times New Roman", sans-serif;
+    padding: 20px; 
+    margin: 2px; 
+    text-align: justify;
+    font-size: 22px;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    }
+    
+h1 {
+    text-align: center;
+    font-family: "Edwardian Script ITC";
+    font-size: 80px;
+    margin: 1px;
+    color: rgb(80, 80, 76);
+    text-shadow: 
+        1px 1px 1px rgb(177, 145, 49),
+        2px 2px 1px rgb(23, 136, 23);
+}
+
+h2 {
+    padding:25px; 
+    margin: 2px;
+    text-align: center;
+    color:rgb(18, 3, 3) ;
+    font-family: "Rockwell Condensed", sans-serif;
+    font-weight: bold;
+}
+
+h3 {
+    color:rgb(6, 57, 12);
+    font-size: 27px;
+    font-family: "Berlin Sans FB", sans-serif;
+}
+
+h4 {
+    color:rgb(15, 69, 21);
+    font-size: 30px;
+    font-family: "Lucida calligraphy", sans-serif;
+}
+
+
+/******************* Botones de interaccion dentro de la pagina ************************/
+.conocecomoir {
+    color: rgb(16, 3, 52);
+}
+
+.irinicio {
+    color: rgb(62, 3, 240);
+}
+
+.contain {
+    display: flex;
+    justify-content: center; 
+}
+
+
+/****************** Carrusel de imagenes automatico pagina principal **********************/
+.carouselprincipal {
+    position: relative;
+    max-width: 1250px;
+    height: 700px;
+    margin: auto;
+    padding-bottom: 3px;
+}
+
+.carouselprincipal img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    border: 5px solid #0b0c0e
+}
+
+.carouselprincipal img.active {
+    display: block;
+}
+
+.puntosprincipal {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.puntoprincipal {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background-color: #020202;
+    border-radius:70%;
+    transition: background-color 0.3s ease;
+}
+
+.puntoprincipal.active {
+    background-color: #0de81f;
+}
+
+
+/******************** Carrusel de imagenes automatico de pagina pueblos ********************/
+.carouselaut {
+    position: relative;
+    max-width: 1250px;
+    height: 700px;
+    margin: auto;
+    padding-bottom: 3px;
+}
+
+.carouselaut img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    border: 5px solid #000000
+}
+
+.carouselaut img.active {
+    display: block;
+}
+
+.puntosaut {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.puntoaut {
+    width: 15px;
+    height: 15px;
+    margin: 10px;
+    background-color: #020202;
+    border-radius:70%;
+    transition: background-color 0.3s ease;
+}
+
+.puntoaut.active {
+    background-color: #0de81f;
+}
+
+/******************* Carrusel de imagenes con botón de pagina pueblos*******************/
+/******** Barichara ********/
+.carouselbarichara {
+    position: relative;
+    max-width: 410px;
+    height: 340px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 4px;
+}
+
+.carouselbarichara img {
+    max-width: 410px;
+    height: 340px;
+    display: none;
+}
+
+.carouselbarichara img.active {
+    display: block;
+}
+
+#prevBtnBar, #nextBtnBar {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#prevBtnBar {
+    left: 0;
+}
+
+#nextBtnBar {
+    right: 0;
+}
+
+#prevBtnBar:hover, #nextBtnBar:hover {
+    background-color: rgba(51, 110, 5, 0.8);
+}
+
+/********* Sangil *********/
+.carouselsangil {
+    position: relative;
+    max-width: 410px;
+    height: 340px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 4px;
+}
+
+.carouselsangil img {
+    max-width: 410px;
+    height: 340px;
+    display: none;
+}
+
+.carouselsangil img.active {
+    display: block;
+}
+
+#prevBtnSan, #nextBtnSan {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#prevBtnSan {
+    left: 0;
+}
+
+#nextBtnSan {
+    right: 0;
+}
+
+#prevBtnSan:hover, #nextBtnSan:hover {
+    background-color: rgba(51, 110, 5, 0.8);
+}
+
+/********* velez *********/
+.carouselvelez {
+    position: relative;
+    max-width: 410px;
+    height: 340px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 4px;
+}
+
+.carouselvelez img {
+    max-width: 410px;
+    height: 340px;
+    display: none;
+}
+
+.carouselvelez img.active {
+    display: block;
+}
+
+#prevBtnVel, #nextBtnVel {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#prevBtnVel {
+    left: 0;
+}
+
+#nextBtnVel {
+    right: 0;
+}
+
+#prevBtnVel:hover, #nextBtnVel:hover {
+    background-color: rgba(51, 110, 5, 0.8);
+}
+
+/********* charala *********/
+.carouselcharala {
+    position: relative;
+    max-width: 410px;
+    height: 340px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 4px;
+}
+
+.carouselcharala img {
+    max-width: 410px;
+    height: 340px;
+    display: none;
+}
+
+.carouselcharala img.active {
+    display: block;
+}
+
+#prevBtnCha, #nextBtnCha {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#prevBtnCha {
+    left: 0;
+}
+
+#nextBtnCha {
+    right: 0;
+}
+
+#prevBtnCha:hover, #nextBtnCha:hover {
+    background-color: rgba(51, 110, 5, 0.8);
+}
+
+/********** Guavata **********/
+.carouselgua {
+    position: relative;
+    max-width: 410px;
+    height: 340px;
+    margin: 20px;
+    padding: auto;
+    border-radius: 4px;
+}
+
+.carouselgua img {
+    max-width: 410px;
+    height: 340px;
+    display: none;
+}
+
+.carouselgua img.active {
+    display: block;
+}
+
+#prevBtnGua, #nextBtnGua {
+    position: absolute;
+    top: 50%;
+    padding: 15px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
+#prevBtnGua {
+    left: 0;
+}
+
+#nextBtnGua {
+    right: 0;
+}
+
+#prevBtnGua:hover, #nextBtnGua:hover {
+    background-color: rgba(51, 110, 5, 0.8);
+}
+
+
+/******************* Formulario de contacto **********************/
+form {
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    margin-top: 2px;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}

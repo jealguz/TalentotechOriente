@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre Santander</title>
+    <link rel="stylesheet" href="PSantanderMagico.css">
+</head>
+
+<body>
+    <!-- enlaces desplegables -->
+    <header>
+        <nav>
+            <img src="./BanderaSantander.png" style="width: 70px; height: auto; padding: 5px; margin: 5px; float: left;">
+            <ul>
+                <li><a href="#" class="nav-enlace">Inicio</a></li>
+                <li><a href="PagPueblos.html#pueblos" class="nav-enlace">Pueblos</a>
+                <ul>
+                    <li><a href="PagPueblos.html#barichara">Barichara</a></li>
+                    <li><a href="PagPueblos.html#sang">SanGil</a></li>
+                    <li><a href="PagPueblos.html#velez">Velez</a></li>
+                    <li><a href="PagPueblos.html#guavata">Guavatá</a></li>
+                    <li><a href="PagPueblos.html#charala">Charala</a></li>
+                  </ul>
+                </li>
+                <li><a href="PagAtracciones.html#atracciones" class="nav-enlace">Atracciones</a>
+                    <ul>
+                        <li><a href="PagAtracciones.html#cuevas">Cuevas</a></li>
+                        <li><a href="PagAtracciones.html#museos">Museos</a></li>
+                        <li><a href="PagAtracciones.html#cultura">Cultura</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#" class="nav-enlace">Nosotros</a>
+                        <ul>
+                            <li><a href="PagMisionVision.html#mision">Misión/Visión</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                          </ul>
+                    </li>
+            </ul>
+        </nav>   
+        
+        <h1>Bienvenidos a Santander Magico</h1>
+        <br>
+        <div class="textdescripcion1">
+        - Descubre los mejores sitios del departamento de Santander para que puedas visitar, conocer y sumergirte mucho más en ellos -
+        </div>
+        <hr>
+    </header>        
+    
+    <!-- imagenes en carrusel automatico -->
+        <div class="carouselprincipal">
+            <img src ="https://media.istockphoto.com/id/491500768/es/foto/colombia-chicamocha-ca%C3%B1%C3%B3n-en-el-departamento-de-santander.jpg?s=612x612&w=0&k=20&c=C04PnPgWtg-qrtEPtV49jA377Bzhb5nucQG4uKxSSMw=" 
+            alt="cañonchimacocha" class="active">
+            <img src="https://i1.wp.com/ciudadesysabores.com/wp-content/uploads/2016/08/IMG_0263-Recuperado.jpg" 
+            alt="puentenovena">
+            <img src="https://www.las2orillas.co/wp-content/uploads/2017/09/gachas-santander.jpg" 
+            alt="gachas">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Barichara_Calle.jpg/1200px-Barichara_Calle.jpg" 
+            alt="pueblo1">
+            <img src="https://cdn.colombia.com/images/v2/turismo/sitios-turisticos/santander/catedral-en-la-plaza-principal-de-la-ciudad-de-Barichara-800.jpg" 
+            alt="pueblo2">
+            <img src="https://cdn.thecolombianway.com/wp-content/uploads/2020/05/giron-main-image.jpg" 
+            alt="pueblo3">
+        </div>   
+        <br>
+        <div class="puntosprincipal">
+            <span class="puntoprincipal"></span>
+            <span class="puntoprincipal"></span>
+            <span class="puntoprincipal"></span>
+            <span class="puntoprincipal"></span>
+            <span class="puntoprincipal"></span>
+            <span class="puntoprincipal"></span>
+        </div>
+        <br>
+        <div class="textdescripcion2">   
+            Santander es un departamento ubicado al norte del país, hace parte de la región Andina y su territorio cubre la vertiente 
+            occidental de la Cordillera Oriental. Esto hace que el territorio presente una alta actividad sísmica, por lo que se le cataloga 
+            como el nido sísmico de Bucaramanga. Santander es uno de los treinta y dos departamentos que forman la República de Colombia. Su 
+            capital es Bucaramanga. Está ubicado al noreste del país, en la región andina. Con unos 2 280 908 habitantes en 2018 es el sexto 
+            departamento por población. Recibe su nombre en alusión a Francisco de Paula Santander, prócer de la independencia de la Nueva Granada.
+       </div>
+       <br>
+       <hr>
+ <!-- Contactenos-->
+    <div style="background-color: rgb(163, 163, 119); padding:1px; margin: 1px; text-align: center"><h3>CONTACTO</h3></div>
+    <section id="contacto">
+        <article>
+            <div class="textdescripcion4"> 
+                Llena el siguiente formulario para obtener una asesoria más detallada acerca de estos maravillosos lugares.
+            </div>
+            <hr>
+            <form id="registroContacto">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required>
+                <span class="error" id="errorNombre"></span>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="errorEmail"></span>
+                
+                <label for="lugar">Lugar que deseas visitar:</label><br>
+                <input type="text" id="lugar" name="lugar" required>
+                <span class="error" id="errorLugar"></span>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </article>
+    </section>
+    <p><a href="#">Volver al inicio </a></p>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Proyecto grupo 10 - Bootcamp programacion G13 - Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="PagPrincipal.js"></script>
+</body>
+</html>
